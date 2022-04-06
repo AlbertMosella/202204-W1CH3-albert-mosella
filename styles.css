@@ -1,0 +1,45 @@
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.container .photo {
+  background-size: contain;
+  width: 300px;
+  height: 200px;
+  background-repeat: no-repeat;
+}
+.perro1 {
+  background-image: url(/imagenes/01.jpg);
+}
+.gato1 {
+  background-image: url(/imagenes/02.jpg);
+}
+.perro2 {
+  background-image: url(/imagenes/03.jpg);
+}
+
+/* .picture1 {
+  width: 300px;
+  height: 450px;
+  border-radius: 3em;
+  background-image: url(/imagenes/01.jpg);
+}
+
+.picture2 {
+  width: 300px;
+  height: 450px;
+  border-radius: 3em;
+  background-image: url(/imagenes/02.jpg);
+}
+
+.picture3 {
+  width: 300px;
+  height: 450px;
+  border-radius: 3em;
+  background-image: url(/imagenes/03.jpg);
+} */
