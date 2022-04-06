@@ -12,6 +12,7 @@ body {
   width: 300px;
   height: 200px;
   background-repeat: no-repeat;
+  border-radius: 3em;
 }
 .perro1 {
   background-image: url(/imagenes/01.jpg);
