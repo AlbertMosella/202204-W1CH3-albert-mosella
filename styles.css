@@ -10,6 +10,51 @@ body {
   min-height: 100vh;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: inline-flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 10px;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0px 30px;
+}
+
+.subtitle-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+.subtitle-button span {
+  font-size: 2em;
+  border: 2px solid orange;
+  border-radius: 0 2em 2em 2em;
+  padding: 1em 2em;
+  cursor: pointer;
+}
+
+.subtitle-button span:hover {
+  background-color: orange;
+  color: white;
+}
+
+h2 {
+  font-size: 4em;
+  margin: 0;
+}
+
 .container {
   display: flex;
   justify-content: space-around;
@@ -18,8 +63,10 @@ body {
 .container .photo {
   position: relative;
   background-size: cover;
+  min-width: 300px;
   width: 30%;
   height: 400px;
+  margin-bottom: 30px;
   background-repeat: no-repeat;
   background-position: center;
 }
