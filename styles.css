@@ -1,5 +1,13 @@
+html {
+  background-color: black;
+}
+
 body {
   font-family: "Nunito", sans-serif;
+  width: 70%;
+  margin: 0 auto;
+  background-color: white;
+  min-height: 100vh;
 }
 
 .container {
@@ -8,39 +16,57 @@ body {
   flex-wrap: wrap;
 }
 .container .photo {
-  background-size: contain;
-  width: 300px;
-  height: 200px;
+  position: relative;
+  background-size: cover;
+  width: 30%;
+  height: 400px;
   background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container .photo:hover .overlay {
+  opacity: 1;
+}
+
+.container .photo,
+.overlay {
   border-radius: 3em;
 }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay span:first-child {
+  font-weight: normal;
+}
+
+.overlay span:last-child {
+  font-size: 2em;
+  font-weight: bold;
+}
+
 .perro1 {
   background-image: url(/imagenes/01.jpg);
 }
+
 .gato1 {
   background-image: url(/imagenes/02.jpg);
 }
 .perro2 {
   background-image: url(/imagenes/03.jpg);
 }
-
-/* .picture1 {
-  width: 300px;
-  height: 450px;
-  border-radius: 3em;
-  background-image: url(/imagenes/01.jpg);
-}
-
-.picture2 {
-  width: 300px;
-  height: 450px;
-  border-radius: 3em;
-  background-image: url(/imagenes/02.jpg);
-}
-
-.picture3 {
-  width: 300px;
-  height: 450px;
-  border-radius: 3em;
-  background-image: url(/imagenes/03.jpg);
-} */
